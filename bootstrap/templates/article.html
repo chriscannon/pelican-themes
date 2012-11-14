@@ -2,7 +2,8 @@
 {% block indextitle %}{% endblock %}
 {% block content %}
 	<div class='article'>
-		<div class="page-header"><h1>{{ article.title }}</h1></div>
+        <div class="page-header"><h1><a href="{{ SITEURL }}/{{ article.url
+                    }}">{{ article.title }}</a></h1></div>
 		<div class="well small">{% include "metadata.html" %}</div>
 		<div>{{ article.content }}</div>
 		<div>

@@ -46,12 +46,12 @@
 	<div class="container-fluid">	
 	  <div class="sidebar">
 		<div class="well">
-			<h3>Blogroll</h3>
-			<ul>
-				{% for name, link in LINKS %}
-				<li><a href="{{ link }}">{{ name }}</a></li>
-				{% endfor %}
-			</ul>
+            <h3>Contact</h3>
+            <strong>Christopher T. Cannon</strong><br/>
+            Research Engineer<br/>
+            Applied Informatics Group<br/>
+            <a href="http://www.ist.drexel.edu">College of IS&amp;T</a><br/>
+            <a href="http://www.drexel.edu">Drexel University</a><br/>
 			<div class="social">
 			<h3>Social</h3>
 			<ul>
@@ -63,11 +63,15 @@
 		</div>
 	  </div>
 	  <div class="content">
-			{% block indextitle %}<div class="page-header"><h1>{% block title %} {{ self.windowtitle() }} {% endblock %}</h1></div>{% endblock %}
 			{% block content %}{% endblock %}
 		<footer>
-		  <p> Powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>, theme based on <a href="http://twitter.github.com/bootstrap/">Bootstrap, from Twitter</a>.</p>
-		  <p>&copy; {{ AUTHOR }} 2011</p>
+		  <p> Powered by <a
+              href="http://alexis.notmyidea.org/pelican/">Pelican</a>, theme
+          based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          modified by Chris Cannon.</p>
+          <p>Copyright &copy; {{ AUTHOR }} <script
+              type="text/javascript">document.write(new
+              Date().getFullYear());</script>.</p>
 		</footer>
 	  </div>
    
