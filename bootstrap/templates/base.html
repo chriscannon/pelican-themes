@@ -45,11 +45,12 @@
 	  <div class="sidebar">
 		<div class="well">
             <h3>Contact</h3>
-            <strong>Christopher T. Cannon</strong><br/>
-            Senior Research Engineer<br/>
-            Applied Informatics Group<br/>
-            <a href="http://www.ist.drexel.edu">College of IS&amp;T</a><br/>
-            <a href="http://www.drexel.edu">Drexel University</a><br/>
+            <strong>{{ CONTACT_NAME }}</strong><br/>
+            {{ CONTACT_TITLE }}<br/>
+            {{ CONTACT_GROUP }}<br/>
+            <a href="{{ CONTACT_COLLEGE[0] }}">{{ CONTACT_COLLEGE[1] }}</a><br/>
+            <a href="{{ CONTACT_UNIVERSITY[0] }}">{{ CONTACT_UNIVERSITY[1] }}</a><br/>
+            E-Mail: {{ CONTACT_EMAIL }}<br/>
 			<div class="social">
 			<h3>Social</h3>
 			<ul>
